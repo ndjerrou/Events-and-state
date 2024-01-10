@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Counter from './components/Counter';
 
 const App = () => {
   const [theme, setTheme] = useState('dark');
@@ -46,6 +47,13 @@ const App = () => {
         come here
       </button>
       <button onClick={handleTheme}>Change bgColor du h1</button>
+
+      {/* Create a component named Counter */}
+      {/* It should display un compteur et deux boutons */}
+      {/* bouton + pour incrémenter */}
+      {/* bouton - pour in décrémenter */}
+
+      <Counter />
     </>
   );
 };
